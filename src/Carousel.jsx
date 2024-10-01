@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from 'react';
 
 class Carousel extends Component {
   state = {
@@ -6,7 +6,7 @@ class Carousel extends Component {
   };
 
   static defaultProps = {
-    images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
+    images: ['http://pets-images.dev-apis.com/pets/none.jpg'],
   };
 
   handleIndexClick = (e) => {
@@ -20,9 +20,13 @@ class Carousel extends Component {
     const { images } = this.props;
 
     return (
-      <div className="carousel">
-        <img src={images[active]} alt="animal hero" />
-        <div className="carousel-smaller">
+      <div className="w-60">
+        <img
+          className="rounded-full p-4"
+          src={images[active]}
+          alt="animal hero"
+        />
+        <div className="flex gap-4 p-4">
           {images.map((photo, index) => (
             // eslint-disable-next-line
             <img
@@ -30,7 +34,7 @@ class Carousel extends Component {
               data-index={index}
               key={photo}
               src={photo}
-              className={index === active ? "active" : ""}
+              className={`${index === active ? 'border-4 border-black' : ''} rounded-full`}
               alt="animal thumbnail"
             />
           ))}
