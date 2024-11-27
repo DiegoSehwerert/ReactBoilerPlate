@@ -1,4 +1,4 @@
-# 🚀 **ReactBoilerPlate**
+# **ReactBoilerPlate**
 
 Welcome to **ReactBoilerPlate**, my inaugural venture into the world of React.  
 This project serves as a foundational template for building React applications, incorporating essential tools and configurations to streamline development.
